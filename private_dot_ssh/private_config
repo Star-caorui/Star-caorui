@@ -1,4 +1,4 @@
-Host "iNetech-BJ"
+Host "bj.inetech.fun"
   User root
   HostName bj.inetech.fun
   Port 22
@@ -6,8 +6,13 @@ Host "iNetech-BJ"
   StreamLocalBindUnlink yes
   RemoteForward /run/user/0/gnupg/d.zieiwd481e4xq6m8jbzj83fg/S.gpg-agent /run/user/1000/gnupg/d.551bkpiq3zwhzseqyxhfuukn/S.gpg-agent.extra
 
-Host "iNetech-Home"
+Host "home.inetech.fun"
   User root
   HostName home.inetech.fun
   Port 22
   ForwardAgent yes
+  StreamLocalBindUnlink yes
+  RemoteForward /run/user/0/gnupg/d.zieiwd481e4xq6m8jbzj83fg/S.gpg-agent /run/user/1000/gnupg/d.551bkpiq3zwhzseqyxhfuukn/S.gpg-agent.extra
+
+Host *
+  IdentityAgent ~/.1password/agent.sock
