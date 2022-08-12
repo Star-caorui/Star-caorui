@@ -27,7 +27,27 @@ zi light /usr/share/oh-my-zsh/plugins/sudo
 autoload compinit; compinit
 
 # Configuring Alias...
-if [[ ${DEVICE_TYPE} == 'Desktop' ]]; then
+alias clip='curl -F "c=@-" "https://api.inetech.fun/clip?return=preview"'
+if [ -f /usr/bin/exa ]; then
+  alias ls=exa
+  alias lshmjk='ls -a ${HOME} -I ".cache|.config|.local|Desktop|Documents|Downloads|Music|Pictures|Templates|Videos"'
+fi
+if [ -f /usr/bin/bat ]; then
+  alias cat=bat
+fi
+if [ -f /usr/bin/duf ]; then
+  alias df=duf
+fi
+if [ -f /usr/bin/ncdu ]; then
+  alias du=ncdu
+fi
+if [ -f /usr/bin/besttrace ]; then
+  alias besttrace='besttrace -q 1'
+fi
+if [[ ${EUID} == 0 ]]; then
+  alias gpg='gpg --no-autostart'
+  gpg -K &> /dev/null
+else
   alias bwrap='bwrap  --die-with-parent\
                       --dev-bind / /\
                       --tmpfs ${HOME}\
@@ -39,20 +59,6 @@ if [[ ${DEVICE_TYPE} == 'Desktop' ]]; then
                       --bind  ${HOME}/.cache ${HOME}/.cache\
                       --bind  ${HOME}/.config ${HOME}/.config\
                       --bind  ${HOME}/.local ${HOME}/.local'
-  alias mntsite='sshfs iNetech-BJ:/srv/website ~/Documents/VMS/iNetech/BJ'
+  alias yarn="bwrap --bind ${HOME}/.config/yarn/config ${HOME}/.yarnrc /usr/bin/yarn"
+  alias oicq="bwrap --bind ${HOME}/.config/oicq ${HOME}/.oicq /usr/bin/oicq"
 fi
-if [[ ${DEVICE_TYPE} == 'Server' ]]; then
-  alias paru='sudo -u http /usr/bin/paru'
-  alias gpg='gpg --no-autostart'
-  gpg -K &> /dev/null
-fi
-alias ls=exa
-alias cat=bat
-alias df=duf
-alias du=ncdu
-alias besttrace='besttrace -q 1'
-alias lshmjk='ls -a ${HOME} -I ".cache|.config|.local|Desktop|Documents|Downloads|Music|Pictures|Templates|Videos"'
-alias yarn="bwrap --bind ${HOME}/.config/yarn/config ${HOME}/.yarnrc /usr/bin/yarn"
-alias oicq="bwrap --bind ${HOME}/.config/oicq ${HOME}/.oicq /usr/bin/oicq"
-alias clip='curl -F "c=@-" "https://api.inetech.fun/clip?return=preview"'
-
