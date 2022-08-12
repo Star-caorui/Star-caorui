@@ -45,7 +45,6 @@ if [ -f /usr/bin/besttrace ]; then
   alias besttrace='besttrace -q 1'
 fi
 if [[ ${EUID} == 0 ]]; then
-  killall gpg-agent
   alias gpg='gpg --no-autostart'
   gpg -K &> /dev/null
 else
