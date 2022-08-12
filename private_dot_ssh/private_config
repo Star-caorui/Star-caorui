@@ -12,4 +12,4 @@ Host "home.inetech.fun"
   Port 22
   ForwardAgent yes
   StreamLocalBindUnlink yes
-  RemoteForward /run/user/0/gnupg/S.gpg-agent /run/user/1000/gnupg/d.551bkpiq3zwhzseqyxhfuukn/S.gpg-agent.extra
+  RemoteForward /run/user/0/gnupg/d.zieiwd481e4xq6m8jbzj83fg/S.gpg-agent /run/user/1000/gnupg/d.551bkpiq3zwhzseqyxhfuukn/S.gpg-agent.extra
