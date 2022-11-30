@@ -1,0 +1,7 @@
+[git]
+    autoCommit = true
+    autoPush = true
+[data]
+    signingkey = "6A34401888C9B3A30A7F05CBB415400AEED441E9"
+    name = "Star_caorui"
+    email = "star_caorui@hotmail.com"
