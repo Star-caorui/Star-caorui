@@ -3,9 +3,11 @@ README.md
 
 {{- if eq .chezmoi.hostname "iNetech-PC" }}
   .config/environment.d/server.conf
+  
 {{- end }}
 
-{{- if eq .chezmoi.hostname "iNetech-BJ" "CSC" }}
+{{- if eq .chezmoi.hostname "iNetech-BJ" "iNetech-Home" }}
+  .config/chrome-flags.conf
   .config/environment.d/key.conf
   .config/environment.d/desktop.conf
 {{- end }}
