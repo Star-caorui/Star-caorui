@@ -45,8 +45,8 @@ if [ -f /usr/bin/besttrace ]; then
   alias besttrace='besttrace -q 1'
 fi
 if [[ ${EUID} == 0 ]]; then
-  alias gpg='gpg --no-autostart'
-  gpg -K &> /dev/null
+  # alias gpg='gpg --no-autostart'
+  # gpg -K &> /dev/null
 else
   alias bwrap='bwrap  --die-with-parent\
                       --dev-bind / /\
