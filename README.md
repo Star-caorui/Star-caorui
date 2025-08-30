@@ -12,6 +12,6 @@
   - 开发协作: Git, Github, Markdown.  
 
 #### 联系我 | Contact me  
-  - ✉️ Email: i@inetech.fun  
+  - ✉️ Email: i@udp0.com  
 
 Premature optimization is the root of all evil.  
