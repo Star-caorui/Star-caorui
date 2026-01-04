@@ -2,13 +2,13 @@
 
 #### 关于我 | About me  
   - Nickname: Star_caorui  
-  - Blog: https://blog.inetech.fun  
+  - Blog: https://blog.udp0.com  
   - Github: https://github.com/Star-caorui/  
 
 #### 技术栈 | Tech Stack  
   - 操作系统: Arch Linux, Windows Server.  
-  - 编程语言: Nodejs, Python  
-  - 数据库: MySQL, SQLite.  
+  - 编程语言: Python  
+  - 数据库: SQLite.  
   - 开发协作: Git, Github, Markdown.  
 
 #### 联系我 | Contact me  
