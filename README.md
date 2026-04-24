@@ -1,7 +1,7 @@
 ## 欢迎来到这里 |  Hi there 👋  
 
 #### 关于我 | About me  
-  - Nickname: Star_caorui  
+  - Nickname: Betterr ~~Star_caorui, 今夕何夕, 小曹, 星星~~  
   - Blog: https://blog.udp0.com  
   - Github: https://github.com/Star-caorui/  
 
